@@ -4,7 +4,7 @@ import random
 import imageio.v2 as imageio
 
 # Load the original image
-image_path = r'C:\Users\subani\OneDrive\Desktop\codewave_cookie\5f65e6cf0cf3b4.21983663-270.jpg'
+image_path = r'C:\Users\subani\OneDrive\Desktop\codewave_cookie\coin_og.jpg'
 image = imageio.imread(image_path)
 
 def add_mask(image):
