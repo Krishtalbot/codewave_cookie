@@ -25,5 +25,5 @@ for _ in range(10):
 
 
 for i, img in enumerate(synthetic_images):
-    imageio.imwrite(f'C:/Users/subani/OneDrive/Desktop/codewave_cookie/rotate/rotate_synthetic_{i}.jpg', img)
+    imageio.imwrite(f'C:/Users/krish/OneDrive/Desktop/Dev/projects/codewave_cookie/data/augumented_undamaged/undamaged_aug{i+1}.jpg', img)
 

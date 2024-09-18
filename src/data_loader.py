@@ -26,4 +26,9 @@ def load_images(damaged_dir, augmented_damaged_dir, augmented_undamaged_dir, img
         img_array = img_to_array(img)
         undamaged_images.append(img_array)
 
+    # Ensure the number of damaged and undamaged images match
+    num_images = min(len(damaged_images), len(undamaged_images))
+    damaged_images = damaged_images[:num_images]
+    undamaged_images = undamaged_images[:num_images]
+
     return np.array(damaged_images) / 255.0, np.array(undamaged_images) / 255.0
