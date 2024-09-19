@@ -23,7 +23,6 @@ for column in data.columns:
     else:
         data[column] = data[column].fillna(data[column].median())
 
-# feature engineering
 data['Hazard_Level'] = pd.cut(data['Hazard (Intensity)'], bins=[0, 1.5, 2.5, 3], labels=['Low', 'Moderate', 'High'])
 data['Housing_Vulnerability'] = np.where(data['Housing'] > data['Housing'].mean(), 1, 0)
 data['Economic_Vulnerability'] = np.where(data['Poverty'] > data['Poverty'].mean(), 1, 0)
